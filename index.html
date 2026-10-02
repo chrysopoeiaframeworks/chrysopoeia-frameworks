@@ -1,14 +1,424 @@
-<!DOCTYPE html>  <!-- document type declaration-->
-<html lang="en">  <!-- html version element with language attribute-->
-    <head>  <!--important metadata goes here-->
-        <meta charset=""UTF-8"/>  <!--character encoding-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  <!--responsive design-->
-        <title>Marler Quantum Collective</title>  <!--webpage title, shows in browser tab-->
-        <link rel="stylesheet" href="style.css"/>  <!--link to external CSS file-->
-    </head>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrysopoeia Frameworks | Turn Chaos to Gold</title>
     
-    <body>  <!--page content, i.e. headings, para, etc-->
-        <h1>Marler Quantum Collective</h1>  <!--main heading-->
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@600&family=Outfit:wght@900&display=swap" rel="stylesheet">
 
-    </html>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F9F6F0',
+                        indigo: '#1D2E54',
+                        terracotta: '#c84b31',
+                        gold: '#DEB841',
+                        ink: '#040816',
+                        slate: '#646974'
+                    },
+                    fontFamily: {
+                        outfit: ['Outfit', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base styles mapping to typography hierarchy */
+        body { background-color: #F9F6F0; color: #040816; }
+        .h-major { font-family: 'Outfit', sans-serif; font-weight: 900; color: #1D2E54; letter-spacing: -0.025em; }
+        .h-sub { font-family: 'Montserrat', sans-serif; font-weight: 600; color: #c84b31; }
+        .body-text { font-family: 'Inter', sans-serif; font-weight: 400; color: #040816; line-height: 1.625; }
+        
+        /* Custom form focus states */
+        input:focus, textarea:focus { outline: none; border-color: #1D2E54; box-shadow: 0 0 0 1px #1D2E54; }
+    </style>
+</head>
+<body class="font-inter antialiased bg-cream text-ink">
+
+    <nav class="fixed w-full z-50 bg-cream/95 backdrop-blur-sm border-b border-slate/20 transition-all duration-300 shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-12">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="h-major text-2xl tracking-tight">
+                        Chry<span class="text-terracotta">sopoeia</span> Frameworks
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="body-text text-sm hover:text-terracotta transition-colors">About</a>
+                    <a href="#services" class="body-text text-sm hover:text-terracotta transition-colors">Services</a>
+                    <a href="#faq" class="body-text text-sm hover:text-terracotta transition-colors">FAQ</a>
+                    <!-- CTA Button: Deep Indigo Background, Raw Gold Text -->
+                    <a href="#contact" class="bg-indigo text-gold px-6 py-2.5 rounded-sm font-montserrat text-sm font-semibold hover:bg-indigo/90 transition-all shadow-md transform hover:-translate-y-0.5">
+                        Start Your Diagnostic
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-indigo hover:text-terracotta focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-slate/20 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#about" class="block px-3 py-2 body-text text-base hover:bg-slate/10 rounded-sm">About</a>
+                <a href="#services" class="block px-3 py-2 body-text text-base hover:bg-slate/10 rounded-sm">Services</a>
+                <a href="#faq" class="block px-3 py-2 body-text text-base hover:bg-slate/10 rounded-sm">FAQ</a>
+                <a href="#contact" class="block mt-4 text-center bg-indigo text-gold px-3 py-3 rounded-sm font-montserrat font-semibold w-full">
+                    Start Your Diagnostic
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <span class="h-sub text-lg md:text-xl tracking-wide uppercase block mb-4">Turn your chaos to gold.</span>
+                <h1 class="h-major text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight">
+                    We turn operational complexity into practical systems—and practical systems into greater freedom.
+                </h1>
+                <p class="body-text text-lg md:text-xl text-slate mb-10 max-w-2xl mx-auto">
+                    No business should have to depend on one person remembering everything.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#services" class="bg-indigo text-gold px-8 py-4 rounded-sm font-montserrat font-semibold text-lg hover:bg-indigo/90 transition-all shadow-lg transform hover:-translate-y-0.5 w-full sm:w-auto">
+                        Explore Frameworks
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-slate text-ink px-8 py-4 rounded-sm font-montserrat font-semibold text-lg hover:border-indigo hover:text-indigo transition-all w-full sm:w-auto">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-terracotta/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+    </header>
+
+    <section id="about" class="py-20 lg:py-32 border-t border-slate/20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Mission & Principles -->
+                <div>
+                    <h2 class="h-sub text-sm uppercase tracking-wider mb-2">Our Mission</h2>
+                    <h3 class="h-major text-4xl md:text-5xl mb-6">Transforming friction into clarity.</h3>
+                    <p class="body-text text-lg mb-6">
+                        At Chrysopoeia Frameworks, we believe that operational chaos is merely potential waiting for structure. Founded by Sirena & Elijah "Kai" Marler, our approach is built on the reality of running complex businesses.
+                    </p>
+                    <p class="body-text text-lg mb-8">
+                        Our philosophy is rooted in personal resilience, mutual accountability, and a defining core metric: <strong>radical honesty</strong>. We don't just organize tasks; we engineer operational independence so you can step out of the daily grind.
+                    </p>
+                    
+                    <div class="bg-indigo p-6 rounded-sm shadow-md border-l-4 border-terracotta">
+                        <h4 class="font-outfit font-black text-gold text-xl mb-2">The Chrysopoeia Standard</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-gold mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span class="text-cream font-inter">Systems must serve the people, not the other way around.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-gold mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span class="text-cream font-inter">Radical honesty over comfortable silence.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-gold mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                <span class="text-cream font-inter">Accountability drives true independence.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Meet the Owners Headshots -->
+                <div>
+                    <h2 class="h-major text-3xl mb-8 text-center lg:text-left">Meet the Founders</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <!-- Sirena Marler -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-full aspect-square border-2 border-slate border-dashed bg-cream flex items-center justify-center rounded-sm mb-4 relative overflow-hidden group">
+                                <div class="absolute inset-0 bg-slate/5 transition-colors group-hover:bg-slate/10"></div>
+                                <span class="text-slate font-inter text-sm flex flex-col items-center">
+                                    <svg class="w-8 h-8 mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                    [Headshot: Sirena]
+                                </span>
+                            </div>
+                            <h3 class="h-major text-2xl mb-1">Sirena Marler</h3>
+                            <p class="h-sub text-sm">Co-Founder & Operator</p>
+                        </div>
+                        <!-- Elijah "Kai" Marler -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-full aspect-square border-2 border-slate border-dashed bg-cream flex items-center justify-center rounded-sm mb-4 relative overflow-hidden group">
+                                <div class="absolute inset-0 bg-slate/5 transition-colors group-hover:bg-slate/10"></div>
+                                <span class="text-slate font-inter text-sm flex flex-col items-center">
+                                    <svg class="w-8 h-8 mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                    [Headshot: Elijah "Kai"]
+                                </span>
+                            </div>
+                            <h3 class="h-major text-2xl mb-1">Elijah "Kai" Marler</h3>
+                            <p class="h-sub text-sm">Co-Founder & Sirena's Cheerleader</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 lg:py-32 bg-white/50 border-t border-slate/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="h-sub text-sm uppercase tracking-wider mb-2">Our Solutions</h2>
+                <h3 class="h-major text-4xl md:text-5xl">Frameworks for Freedom</h3>
+                <p class="body-text text-lg max-w-2xl mx-auto mt-4 text-slate">We build comprehensive, practical tools designed to organize your daily operations and scale your impact.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Service 1: Operational Diagnostic -->
+                <div class="bg-cream border border-slate/30 p-8 lg:p-12 rounded-sm shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col h-full">
+                    <div class="absolute top-0 right-0 bg-terracotta text-cream font-montserrat text-xs font-bold px-4 py-1 uppercase tracking-wider">Most Popular</div>
+                    <h4 class="h-major text-3xl mb-2">Operational Diagnostic</h4>
+                    <p class="h-sub mb-6 border-b border-slate/20 pb-4">$1,500 <span class="text-slate font-inter font-normal">| 5-Day Timeline</span></p>
+                    
+                    <p class="body-text mb-6 flex-grow">
+                        A rapid, intensive deep-dive into your current workflows. We identify bottlenecks, hidden liabilities, and inefficient resource allocation.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-terracotta mr-3 mt-1">✦</span>
+                            <span class="body-text text-sm"><strong>Workflow Evaluation:</strong> Map out exactly where time and money are leaking.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-terracotta mr-3 mt-1">✦</span>
+                            <span class="body-text text-sm"><strong>Risk Assessment:</strong> Uncover exposure points using our proprietary KEI/DOMM frameworks.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-terracotta mr-3 mt-1">✦</span>
+                            <span class="body-text text-sm"><strong>Prioritized Roadmap:</strong> Receive a step-by-step action plan to regain control immediately.</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="inline-block text-center bg-indigo text-gold py-3 px-6 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors mt-auto">Book Diagnostic</a>
+                </div>
+
+                <!-- Service 2: Living Operations HQ -->
+                <div class="bg-indigo p-8 lg:p-12 rounded-sm shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                    <h4 class="font-outfit font-black text-cream text-3xl mb-2">Living Operations HQ</h4>
+                    <p class="font-montserrat font-semibold text-terracotta mb-6 border-b border-slate/40 pb-4">Starting at $5,500 <span class="text-cream/70 font-inter font-normal">| 10-Day Timeline</span></p>
+                    
+                    <p class="font-inter text-cream/90 leading-relaxed mb-6 flex-grow">
+                        The ultimate operational command center. We build customized, integrated hubs that act as the single source of truth for your entire team.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8 text-cream/90">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3 mt-1">✦</span>
+                            <span class="font-inter text-sm"><strong>Dynamic SOPs:</strong> Living standard operating procedures that evolve with your business.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3 mt-1">✦</span>
+                            <span class="font-inter text-sm"><strong>Role-Based Views:</strong> Customized dashboards so every team member sees exactly what they need.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-3 mt-1">✦</span>
+                            <span class="font-inter text-sm"><strong>Tech Stack Tracking:</strong> Centralized management of your tools, subscriptions, and access protocols.</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="inline-block text-center bg-transparent border-2 border-gold text-gold py-3 px-6 rounded-sm font-montserrat font-semibold hover:bg-gold hover:text-indigo transition-colors mt-auto">Inquire About HQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 lg:py-32 border-t border-slate/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="h-major text-4xl md:text-5xl mb-4">Frequently Asked Questions</h2>
+                <p class="body-text text-lg text-slate">Clarity before commitment.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-slate/30 bg-cream rounded-sm overflow-hidden">
+                    <button class="faq-button w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hover:bg-slate/5 transition-colors">
+                        <span class="h-major text-xl">Who do you serve?</span>
+                        <svg class="faq-icon w-6 h-6 text-indigo transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 pt-0">
+                        <p class="body-text text-slate mt-2 border-t border-slate/20 pt-4">
+                            We primarily target dynamic businesses in the wellness, hospitality, and specialized service industries. These sectors often face high logistical complexity and heavy reliance on staff, making our operational frameworks highly effective in reclaiming time and margins.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-slate/30 bg-cream rounded-sm overflow-hidden">
+                    <button class="faq-button w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hover:bg-slate/5 transition-colors">
+                        <span class="h-major text-xl">Do you impose generic templates?</span>
+                        <svg class="faq-icon w-6 h-6 text-indigo transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 pt-0">
+                        <p class="body-text text-slate mt-2 border-t border-slate/20 pt-4">
+                            Never. While we utilize our proven KEI/DOMM structural methodologies as a foundation, every single Living Operations HQ and Diagnostic roadmap is custom-built around your specific team dynamics, existing tech stack, and unique service delivery models.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-slate/30 bg-cream rounded-sm overflow-hidden">
+                    <button class="faq-button w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none hover:bg-slate/5 transition-colors">
+                        <span class="h-major text-xl">What is your approach to operational client independence?</span>
+                        <svg class="faq-icon w-6 h-6 text-indigo transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-6 pt-0">
+                        <p class="body-text text-slate mt-2 border-t border-slate/20 pt-4">
+                            Our ultimate goal is to make ourselves obsolete. We build self-sustaining systems and provide the necessary training so that your team can run the playbooks without relying on continuous external consulting. We measure our success by your operational freedom.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 lg:py-32 border-t border-slate/20 bg-slate/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div>
+                    <h2 class="h-sub text-sm uppercase tracking-wider mb-2">Take the first step</h2>
+                    <h3 class="h-major text-4xl md:text-5xl mb-6">Let's build your framework.</h3>
+                    <p class="body-text text-lg mb-8 text-slate">
+                        Ready to stop depending on memory and start relying on systems? Fill out the inquiry form to schedule your initial consultation. 
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-terracotta mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span class="body-text">hello@chrysopoeiaframeworks.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-terracotta mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="body-text">Mon-Fri, 9am - 5pm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="bg-cream p-8 md:p-10 border border-slate shadow-sm rounded-sm">
+                    <form onsubmit="event.preventDefault(); alert('Form submission simulated successfully!');" class="space-y-6">
+                        
+                        <div>
+                            <label for="name" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-cream border border-slate text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="Jane Doe">
+                        </div>
+                        
+                        <div>
+                            <label for="business" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Business Type / Industry</label>
+                            <input type="text" id="business" name="business" required class="w-full bg-cream border border-slate text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="e.g., Boutique Hotel, Wellness Clinic">
+                        </div>
+
+                        <div>
+                            <label for="painpoints" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Top Operational Pain Points</label>
+                            <textarea id="painpoints" name="painpoints" rows="4" required class="w-full bg-cream border border-slate text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50 resize-none" placeholder="Where is the friction in your daily operations?"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-indigo text-gold py-4 px-6 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors shadow-md">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-ink py-12 border-t border-slate/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <a href="#" class="font-outfit font-black text-2xl tracking-tight text-cream block mb-2">
+                    Chry<span class="text-terracotta">sopoeia</span> Frameworks
+                </a>
+                <p class="font-inter text-slate text-sm">© 2026 Chrysopoeia Frameworks. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <!-- Social Placeholders -->
+                <a href="#" class="text-slate hover:text-gold transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="#" class="text-slate hover:text-gold transition-colors">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Mobile Menu Toggle
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            const mobileLinks = menu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+
+            // FAQ Accordion Logic
+            const faqButtons = document.querySelectorAll('.faq-button');
+            
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const answer = button.nextElementSibling;
+                    const icon = button.querySelector('.faq-icon');
+                    
+                    // Close all other open answers (optional accordian style)
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        if (ans !== answer && !ans.classList.contains('hidden')) {
+                            ans.classList.add('hidden');
+                            const otherIcon = ans.previousElementSibling.querySelector('.faq-icon');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Toggle current answer
+                    if (answer.classList.contains('hidden')) {
+                        answer.classList.remove('hidden');
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        answer.classList.add('hidden');
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
