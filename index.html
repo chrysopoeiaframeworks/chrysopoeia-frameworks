@@ -323,8 +323,14 @@
 
                 <!-- Inquiry Form -->
                 <div class="bg-cream p-8 md:p-10 border border-slate shadow-sm rounded-sm">
-                    <form onsubmit="event.preventDefault(); alert('Form submission simulated successfully!');" class="space-y-6">
-                        
+                    <!-- Original form code, testing web3forms code on lines 327-333 <form onsubmit="event.preventDefault(); alert('Thank you for trusting us with your chaos. We can't wait to turn it into gold.');" class="space-y-6"> -->
+                    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="event.preventDefault(); alert('Thank you for trusting us with your chaos. We can't wait to turn it into gold.');" class="space-y-6">
+                        <input type="hidden" name="access_key" value="3f5e94d0-7610-451f-93b5-1f12ecfb9766">
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>   
                         <div>
                             <label for="name" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Full Name</label>
                             <input type="text" id="name" name="name" required class="w-full bg-cream border border-slate text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="Jane Doe">
