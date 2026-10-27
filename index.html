@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chrysopoeia Frameworks is an operations management consulting firm helping F&B, hospitality, and wellness businesses build centralized digital dashboards, SOPs, and scalable systems.">
-    <meta name="keywords" content="operations management consultant, business systems architect, restaurant SOPs, boutique fitness operations, hospitality consulting, digital command center">
+    <meta name="description" content="Chrysopoeia Frameworks helps service-based businesses turn operational complexity into practical systems. Join the waitlist for our 2027 AI-integrated operations systems, or book a consultation today.">
+    <meta name="keywords" content="operations management consultant, hospitality systems, restaurant SOPs, boutique fitness operations consultant, OSINT research, corporate transcription">
     
-    <title>Chrysopoeia Frameworks | Operations Management & Systems Consulting</title>
+    <title>Chrysopoeia Frameworks | Turn your chaos to gold.</title>
     
-    <!-- Google Fonts: Outfit (900), Montserrat (600), Inter (400) -->
+    <!-- Google Fonts: Outfit (900), Montserrat (600, 900), Inter (400) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@600&family=Outfit:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Montserrat:wght@600;900&family=Outfit:wght@900&display=swap" rel="stylesheet">
     
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="LOG-CFW-Favicon32x32-2026-10-14.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="LOG-CFW-Favicon32x32-2026-10-14.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="LOG-CFW-Favicon16x16-2026-10-14.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="LOG-CFW-AppleTouchIcon-2026-10-14.png">
+
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -35,365 +41,301 @@
                         inter: ['Inter', 'sans-serif'],
                     },
                     backgroundImage: {
-                        'stone-pattern': "url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%23646974\" fill-opacity=\"0.05\" fill-rule=\"evenodd\"%3E%3Ccircle cx=\"3\" cy=\"3\" r=\"3\"/%3E%3Ccircle cx=\"13\" cy=\"13\" r=\"3\"/%3E%3C/g%3E%3C/svg%3E')",
+                        /* Clean Architectural Drafting Grid */
+                        'geometric-grid': "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M40 0L0 0 0 40\" fill=\"none\" stroke=\"%23646974\" stroke-width=\"1\" stroke-opacity=\"0.15\"/%3E%3Ccircle cx=\"40\" cy=\"40\" r=\"1.5\" fill=\"%23646974\" fill-opacity=\"0.25\"/%3E%3C/svg%3E')",
                     }
                 }
             }
         }
     </script>
-    <!-- Standard Favicon (Fallback for older browsers) -->
-    <link rel="icon" type="image/x-icon" href="LOG-CFW-Favicon32x32-2026-10-14.png">
-
-    <!-- Main Favicon for modern browsers (32x32) -->
-    <link rel="icon" type="image/png" sizes="32x32" href="LOG-CFW-Favicon32x32-2026-10-14.png">
-
-    <!-- Small Favicon for browser tabs (16x16) -->
-    <link rel="icon" type="image/png" sizes="16x16" href="LOG-CFW-Favicon16x16-2026-10-14.png">
-
-    <!-- Apple Touch Icon for iOS home screens -->
-    <link rel="apple-touch-icon" sizes="180x180" href="LOG-CFW-AppleTouchIcon-2026-10-14.png">
-
 </head>
-<body class="bg-cream text-ink font-inter text-[11pt] antialiased selection:bg-indigo selection:text-gold">
+<body class="bg-cream text-ink font-inter text-[11pt] antialiased selection:bg-indigo selection:text-gold flex flex-col min-h-screen">
 
     <!-- Navigation Bar -->
     <header class="fixed w-full bg-cream/95 backdrop-blur-md border-b border-slate/20 z-40 top-0 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="#" aria-label="Home">
-                    <!-- Replace with horizontal logo if preferred for nav -->
-                    <img src="LOGO-MAINversion-ChrysopoeiaFrameworks.svg" alt="Chrysopoeia Frameworks Logo" class="h-14 w-auto">
+                <!-- Logo Image & Text -->
+                <a href="#" aria-label="Home" class="flex items-center gap-3">
+                    <img src="chrysopoeia-logo-icononly-1800x1800.svg" alt="Chrysopoeia Frameworks Logo" class="h-14 w-auto" onerror="this.style.display='none'">
+                    <!-- Updated Logo Text: SOP highlighted in Gold -->
+                    <span class="font-outfit font-black text-xl text-indigo tracking-tight uppercase">CHRY<span class="text-gold">SOP</span>OEIA FRAMEWORKS</span>
                 </a>
                               
                 <!-- Desktop Links -->
                 <nav class="hidden md:flex space-x-8 items-center" aria-label="Main Navigation">
                     <a href="#about" class="font-montserrat text-sm font-semibold text-slate hover:text-terracotta transition-colors">Our Approach</a>
-                    <a href="#services" class="font-montserrat text-sm font-semibold text-slate hover:text-terracotta transition-colors">Services</a>
-                    <a href="#faq" class="font-montserrat text-sm font-semibold text-slate hover:text-terracotta transition-colors">FAQ</a>
-                    <!-- SEO Optimized CTA -->
-                    <a href="#coif" class="text-indigo font-montserrat text-sm font-semibold hover:text-terracotta transition-colors">Take The Assessment</a>
-                    <a href="https://calendar.app.google/Wf8MmWnER114sqae6" target="_blank" rel="noopener noreferrer" class="bg-indigo text-gold px-6 py-2.5 rounded-sm font-montserrat text-sm font-semibold hover:bg-indigo/90 transition-colors shadow-sm">
-                        Book Consultation
+                    <a href="#active-services" class="font-montserrat text-sm font-semibold text-slate hover:text-terracotta transition-colors">Active Services</a>
+                    <a href="#contact" class="font-montserrat text-sm font-semibold text-indigo hover:text-terracotta transition-colors">Book Consultation</a>
+                    <a href="#waitlist" class="bg-indigo text-gold px-6 py-2.5 rounded-sm font-montserrat text-sm font-semibold hover:bg-indigo/90 transition-colors shadow-sm">
+                        Join the Waitlist
                     </a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="flex-grow pt-20">
         <!-- Hero Section -->
-        <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-stone-pattern">
-            <div class="max-w-4xl">
-                <p class="font-montserrat font-semibold text-terracotta text-lg mb-4 tracking-wide uppercase">Turn your chaos to gold.</p>
-                <h1 class="font-outfit font-black text-5xl lg:text-7xl tracking-tight text-indigo leading-tight mb-6">
-                    Operational clarity creates room to lead.
-                </h1>
-                <h2 class="sr-only">Operations Management Consulting for F&B, Wellness, and Hospitality</h2>
-                <p class="font-inter font-normal text-ink text-lg lg:text-xl leading-relaxed mb-4">
-                    We help service-based business owners get critical knowledge out of their heads and into systems their teams can actually use. From boutique fitness studios to high-volume hospitality, we build living command centers that make daily execution consistent. 
-                </p>
-                <p class="font-inter font-normal text-ink text-lg lg:text-xl leading-relaxed mb-10">
-                    Because no business should have to depend on one person remembering everything.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://sirena-z1wrzute.scoreapp.com" target="_blank" rel="noopener noreferrer" class="bg-terracotta text-cream px-8 py-4 rounded-sm font-montserrat font-semibold text-center hover:bg-terracotta/90 transition-colors shadow-md">
-                        Calculate Your Operational Score
-                    </a>
-                    <a href="https://calendar.app.google/Wf8MmWnER114sqae6" target="_blank" rel="noopener noreferrer" class="bg-indigo text-gold px-8 py-4 rounded-sm font-montserrat font-semibold text-center hover:bg-indigo/90 transition-colors shadow-md">
-                        Book a Free 30-Min Consultation
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- COIF Lead Magnet Section -->
-        <section id="coif" class="py-16 bg-indigo border-y border-slate/20 bg-stone-pattern">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-outfit font-black text-3xl lg:text-4xl tracking-tight text-cream mb-4">Is your business dependent on your memory?</h2>
-                <p class="font-inter text-cream/90 text-lg mb-8 max-w-2xl mx-auto">
-                    Take the Chrysopoeia Operational Independence Framework (COIF) assessment. In just 3 minutes, uncover your Keyperson Exposure Index and identify exactly where operational friction is hiding in your leadership, people, processes, systems, and performance.
-                </p>
-                <a href="https://sirena-z1wrzute.scoreapp.com" target="_blank" rel="noopener noreferrer" class="bg-gold text-indigo px-8 py-4 rounded-sm font-montserrat font-semibold text-center hover:bg-gold/90 transition-colors shadow-lg">
-                    Start the 3-Minute Assessment
-                </a>
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="mb-16 max-w-3xl">
-                    <h2 class="font-outfit font-black text-4xl tracking-tight text-indigo mb-6">Our Mission</h2>
-                    <p class="font-inter text-ink leading-relaxed text-lg">To liberate service-based business owners from daily operational bottlenecks by transforming tribal knowledge into structured, scalable, and accessible digital systems that empower people, create greater freedom for business owners and teams, and preserve the knowledge and values that make each business distinct—building a foundation for lasting growth and legacy.</p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
-                    <!-- Narrative -->
-                    <div>
-                        <h3 class="font-outfit font-black text-3xl tracking-tight text-indigo mb-6">Meet the Owners</h3>
-                        <p class="font-montserrat font-semibold text-terracotta mb-4">We know what it’s like to never be able to put your phone down.</p>
-        
-                        <p class="font-inter text-ink leading-relaxed mb-4">Many service businesses grow through sheer determination, but that strength quickly becomes a strain when the business becomes more complex. We know firsthand what happens when an owner cannot take a vacation without operations stopping. Our Primary Operating Lead, Sirena, brings over 10 years of battle-tested operations management experience across the hospitality, food and beverage, and boutique wellness industries.</p>
-
-                        <p class="font-inter text-ink leading-relaxed mb-4">Chrysopoeia Frameworks is equally owned by Sirena and Elijah “Kai” Marler. Rooted in a shared history of personal transformation, we’ve learned that durable growth must begin with truth. Honesty is our defining principle. We believe trust is built by being direct, establishing clear expectations, and having the courage to acknowledge what actually needs to change.</p>
-
-                        <p class="font-inter text-ink leading-relaxed">Drawing on specialized backgrounds in technical writing, open-source intelligence, and legal transcription, we seamlessly extract the vital knowledge trapped in a busy founder's head. We don't leave behind dusty PDF binders. We build practical, actionable systems in platforms you already use, liberating you from daily bottlenecks.</p>
+        <section class="relative pt-24 pb-20 lg:pt-32 lg:pb-28 px-4 sm:px-6 lg:px-8 border-b border-slate/20 bg-geometric-grid">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta/10 border border-terracotta/20 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-terracotta animate-pulse"></span>
+                        <span class="font-montserrat font-semibold text-terracotta text-xs tracking-wide uppercase">Launching January 1, 2027</span>
                     </div>
                     
-                    <!-- Headshots -->
+                    <h1 class="font-montserrat font-black text-5xl lg:text-7xl tracking-tight text-indigo leading-tight mb-6">
+                        Operational clarity creates room to lead.
+                    </h1>
+                    
+                    <p class="font-inter font-normal text-ink text-lg leading-relaxed mb-6">
+                        We are fundamentally re-architecting how F&B, wellness, and hospitality businesses operate. By integrating practical AI directly into your daily workflows, we are eliminating single points of failure faster than ever before.
+                    </p>
+                    <p class="font-inter font-normal text-ink text-lg leading-relaxed mb-10">
+                        No more static binders or dusty PDFs. We are building self-sustaining, intelligent command centers that train your staff, answer operational questions in real-time, and preserve your legacy.
+                    </p>
+                    
+                    <div class="flex gap-4">
+                        <a href="#waitlist" class="bg-indigo text-gold px-8 py-4 rounded-sm font-montserrat font-semibold text-center hover:bg-indigo/90 transition-colors shadow-md">
+                            Join the 2027 Waitlist
+                        </a>
+                        <a href="#contact" class="bg-cream text-indigo border border-indigo px-8 py-4 rounded-sm font-montserrat font-semibold text-center hover:bg-indigo/5 transition-colors">
+                            Book a Consultation
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="hidden lg:flex justify-center">
+                    <div class="relative w-full max-w-lg aspect-square rounded-sm border border-slate/20 overflow-hidden shadow-lg">
+                        <img src="chrysopoiea_background-minimalistArchitecture.jpg" alt="AI Integrated Operations Command Center" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Alignment Section -->
+        <section class="py-24 bg-white border-b border-slate/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 max-w-3xl mx-auto">
+                    <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-6">Built for High-Touch Environments</h2>
+                    <p class="font-inter text-ink text-lg leading-relaxed">
+                        Transition your organization away from scattered paper checklists and constant interruptions. We build practical digital command centers where your team can access training, verify protocols, and audit daily workflows—without relying on your memory.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- F&B Operations -->
+                    <div class="relative group rounded-sm overflow-hidden border border-slate/20">
+                        <div class="aspect-[4/3] w-full">
+                            <img src="chrysopoiea_image_restaurant-header.jpg" alt="Restaurant Workflow Optimization" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo/90 via-indigo/40 to-transparent flex flex-col justify-end p-8">
+                            <h3 class="font-montserrat font-black text-2xl text-cream mb-2">Food & Beverage</h3>
+                            <p class="font-inter text-cream/90 text-sm">Standardized recipe books, opening and closing shift checklists, and comprehensive front-of-house training guides.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hospitality Operations -->
+                    <div class="relative group rounded-sm overflow-hidden border border-slate/20">
+                        <div class="aspect-[4/3] w-full">
+                            <img src="chrysopoiea_image_hotel-header.jpg" alt="Hospitality Systems Architecture" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo/90 via-indigo/40 to-transparent flex flex-col justify-end p-8">
+                            <h3 class="font-montserrat font-black text-2xl text-cream mb-2">Boutique Hospitality</h3>
+                            <p class="font-inter text-cream/90 text-sm">Housekeeping SOPs, front desk training manuals, and reliable shift-to-shift handover checklists.</p>
+                        </div>
+                    </div>
+
+                    <!-- Health & Wellness Operations -->
+                    <div class="relative group rounded-sm overflow-hidden border border-slate/20">
+                        <div class="aspect-[4/3] w-full">
+                            <img src="chrysopoiea-image-wellness-studio.jpg" alt="Wellness Studio Operations" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo/90 via-indigo/40 to-transparent flex flex-col justify-end p-8">
+                            <h3 class="font-montserrat font-black text-2xl text-cream mb-2">Health & Wellness</h3>
+                            <p class="font-inter text-cream/90 text-sm">Studio opening checklists, equipment maintenance SOPs, and structured instructor onboarding guides.</p>
+                        </div>
+                    </div>
+
+                    <!-- Office Spaces Operations -->
+                    <div class="relative group rounded-sm overflow-hidden border border-slate/20">
+                        <div class="aspect-[4/3] w-full">
+                            <img src="chrysopoiea-image-office.jpg" alt="Office Space Operations" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-indigo/90 via-indigo/40 to-transparent flex flex-col justify-end p-8">
+                            <h3 class="font-montserrat font-black text-2xl text-cream mb-2">Office Spaces</h3>
+                            <p class="font-inter text-cream/90 text-sm">Administrative SOPs, facility maintenance checklists, and clear front desk training guides.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Owners Section -->
+        <section id="about" class="py-24 bg-cream border-b border-slate/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-6">Meet the Owners</h2>
+                        <p class="font-montserrat font-semibold text-terracotta mb-4">We know what it’s like to never be able to put your phone down.</p>
+                        
+                        <p class="font-inter text-ink leading-relaxed mb-4">Many service businesses grow through sheer determination, but that strength quickly becomes a liability as the operation scales. We know firsthand what happens when an owner cannot take a day off without the business grinding to a halt. Our Principal Consultant, Sirena, brings over 10 years of battle-tested operations management experience across the hospitality, food and beverage, and boutique wellness industries. She has stood exactly where you are—glued to a phone, answering the same questions from shift managers repeatedly because the answers either were not documented, or were documented in a bulky binder impossible to grab in the middle of a rush.</p>
+
+                        <p class="font-inter text-ink leading-relaxed mb-4">That firsthand understanding of operational burnout is why Chrysopoeia Frameworks was built. Equally owned by Sirena and Kai Marler, our partnership is rooted in the belief that durable growth requires honest evaluation. We believe trust is built by being direct, establishing clear expectations, and having the courage to acknowledge what actually needs to change on the floor.</p>
+
+                        <p class="font-inter text-ink leading-relaxed">We do not leave behind dusty PDF binders your team will abandon after the first week. By coupling familiar technology with our proprietary assessments, we build practical, actionable systems in the platforms you already use. We deliver a centralized, living operations HQ in a matter of weeks—without the months-long disruptions of traditional consulting. Our goal is to liberate you from daily bottlenecks, preserve your peace, and empower your team to take genuine pride in their work.</p>
+                    </div>
+                    
                     <div class="grid grid-cols-2 gap-6">
                         <div class="flex flex-col items-center">
-                            <div class="w-full aspect-square bg-slate/20 rounded-sm mb-4 border-2 border-indigo relative overflow-hidden flex items-center justify-center">
-                                <!-- Placeholder for Sirena_photo.jpg -->
-                                <img src="Sirena_photo.jpg" alt="Sirena Marler" class="w-full h-full object-cover">
-                            </div>
+                            <img src="photo-owner_srm.jpg" alt="Sirena Marler" class="w-full aspect-square object-cover object-top rounded-sm mb-4 border border-slate/30 shadow-sm">
                             <h4 class="font-montserrat font-semibold text-indigo text-center">Sirena Marler</h4>
                             <p class="font-inter text-sm text-slate text-center">Co-Founder & Principal Consultant</p>
                         </div>
                         <div class="flex flex-col items-center">
-                            <div class="w-full aspect-square bg-slate/20 rounded-sm mb-4 border-2 border-indigo relative overflow-hidden flex items-center justify-center">
-                                <!-- Placeholder for Kai_photo.jpg -->
-                                <img src="Kai_photo.jpg" alt="Elijah 'Kai' Marler" class="w-full h-full object-cover">
-                            </div>
+                            <img src="photo-owner_ekm.jpg" alt="Elijah 'Kai' Marler" class="w-full aspect-square object-cover object-top rounded-sm mb-4 border border-slate/30 shadow-sm">
                             <h4 class="font-montserrat font-semibold text-indigo text-center">Elijah "Kai" Marler</h4>
-                            <p class="font-inter text-sm text-slate text-center">Co-Founder</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Core Values -->
-                <div class="bg-indigo p-10 lg:p-16 rounded-sm bg-stone-pattern">
-                    <h3 class="font-outfit font-black text-3xl tracking-tight text-cream mb-10">Our Core Values</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Integrity</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We act with honesty, transparency, accountability, and consistency. We take responsibility for our work and follow through on our commitments.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Clarity</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We make complexity easier to understand. We organize information, clarify responsibilities, and make knowledge accessible.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Practical Systems</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We build systems for real people, real workflows, and real business environments.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Empowerment</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We create conditions that support owner confidence, team independence, accessible knowledge, and informed decision-making.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Endurance</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We build with the understanding that businesses and people evolve, and systems must be able to evolve with them.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-montserrat font-semibold text-gold mb-2">Legacy</h4>
-                            <p class="font-inter text-cream/90 text-sm leading-relaxed">We help preserve knowledge, strengthen organizations, and support future generations of people.</p>
+                            <p class="font-inter text-sm text-slate text-center">Co-Founder & Sirena's Cheerleader</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-cream">
+        <!-- Waitlist Capture Section -->
+        <section id="waitlist" class="py-24 bg-indigo bg-geometric-grid">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    
+                    <!-- Form Visual -->
+                    <div class="hidden lg:block relative rounded-sm overflow-hidden shadow-2xl border border-gold/20">
+                        <img src="chrysopoeia_image_newsletter-transformativeOps.jpg" alt="Transmuting Chaos into Gold" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Form -->
+                    <div class="bg-cream p-8 lg:p-12 rounded-sm shadow-xl border border-slate/20">
+                        <h3 class="font-montserrat font-black text-3xl text-indigo mb-4">Secure Your Priority Access</h3>
+                        <p class="font-inter text-ink/80 text-sm mb-8 leading-relaxed">Join the waitlist to receive strategic updates as we finalize our AI-integrated infrastructure for the 2027 launch.</p>
+                        
+                        <form id="waitlistForm" action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4">
+                            <!-- Live Access Key -->
+                            <input type="hidden" name="access_key" value="0d020344-9515-4949-9be2-81d6f096397c">
+                            <input type="hidden" name="subject" value="New Waitlist Subscriber - 2027 Launch">
+                            
+                            <div>
+                                <label for="name" class="block font-montserrat text-xs font-semibold text-indigo mb-1 uppercase tracking-wider">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors text-sm">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block font-montserrat text-xs font-semibold text-indigo mb-1 uppercase tracking-wider">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors text-sm">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block font-montserrat text-xs font-semibold text-indigo mb-1 uppercase tracking-wider">Current Bottleneck</label>
+                                <textarea id="message" name="message" required rows="3" placeholder="Where is your team currently losing time?" class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors text-sm resize-none"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-indigo text-gold py-4 px-6 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors shadow-md mt-4">
+                                Join the Waitlist
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Services Section -->
+        <section id="active-services" class="py-24 bg-cream border-t border-slate/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="font-outfit font-black text-4xl tracking-tight text-indigo mb-4">Our Frameworks & Services</h2>
-                    <p class="font-inter text-ink text-lg max-w-2xl mx-auto">We help businesses move from relying on memory and informal habits toward practical, documented digital command centers.</p>
+                    <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-4">Available Now</h2>
+                    <p class="font-inter text-ink text-lg max-w-2xl mx-auto">While our core operational frameworks undergo their AI integration, our specialized intelligence and documentation services remain fully active.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <!-- Operational Diagnostic -->
-                    <div class="bg-white border-2 border-slate/10 p-8 lg:p-12 rounded-sm shadow-sm hover:border-indigo/30 transition-colors">
-                        <h3 class="font-outfit font-black text-3xl tracking-tight text-indigo mb-2">Operational Diagnostic</h3>
-                        <p class="font-montserrat font-semibold text-terracotta mb-6">$1,500 <span class="text-slate font-normal">| 5-Day Timeline</span></p>
-                        <p class="font-inter text-ink mb-6 leading-relaxed">
-                            A structured assessment mapping your operational exposure. It helps identify gaps, friction, knowledge dependencies, and single points of failure.
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-ink font-inter">
-                                <span class="text-terracotta mr-3 mt-1">✦</span> Stakeholder interviews to capture a complete, ground-level view of operational gaps.
-                            </li>
-                            <li class="flex items-start text-ink font-inter">
-                                <span class="text-terracotta mr-3 mt-1">✦</span> In-person site shadowing to observe actual operations and physical bottlenecks.
-                            </li>
-                            <li class="flex items-start text-ink font-inter">
-                                <span class="text-terracotta mr-3 mt-1">✦</span> Application of the KEI (Keyperson Exposure Index) and DOMM frameworks.
-                            </li>
-                            <li class="flex items-start text-ink font-inter">
-                                <span class="text-terracotta mr-3 mt-1">✦</span> Diagnostic Report and prioritized roadmap for structural improvements.
-                            </li>
-                        </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                    <!-- OSINT -->
+                    <div class="bg-white border border-slate/20 p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-terracotta"></div>
+                        <div>
+                            <h3 class="font-montserrat font-black text-2xl tracking-tight text-indigo mb-2">Vendor & Competitor Intelligence</h3>
+                            <p class="font-inter text-sm text-slate mb-6">Open-Source Intelligence (OSINT)</p>
+                            
+                            <img src="chrysopoeia-image-compass-square.jpg" alt="OSINT Research Compass" class="w-full h-32 object-cover rounded-sm mb-6 border border-slate/10" style="object-position: center 30%;">
+                            
+                            <p class="font-inter text-ink text-sm leading-relaxed mb-8">Enter your next commercial lease or vendor negotiation with data-backed leverage. We deliver custom analytical briefs to vet contracts, map competitor vulnerabilities, and de-risk your physical expansion decisions.</p>
+                        </div>
+                        <a href="mailto:hello@chrysopoeiaframeworks.com?subject=OSINT Inquiry" class="inline-flex font-montserrat font-semibold text-indigo hover:text-terracotta transition-colors text-sm items-center gap-2">
+                            Inquire about OSINT <span aria-hidden="true">&rarr;</span>
+                        </a>
                     </div>
 
-                    <!-- Living Operations HQ -->
-                    <div class="bg-indigo p-8 lg:p-12 rounded-sm shadow-md bg-stone-pattern border border-indigo">
-                        <h3 class="font-outfit font-black text-3xl tracking-tight text-cream mb-2">Living Operations HQ</h3>
-                        <p class="font-montserrat font-semibold text-gold mb-6">Starting at $5,500 <span class="text-cream/70 font-normal">| 10-Day Build Timeline</span></p>
-                        <p class="font-inter text-cream/90 mb-6 leading-relaxed">
-                            A customized operational command center tailored to your environment (built in Google Workspace or Airtable), organizing essential business knowledge and supporting consistent execution.
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-start text-cream/90 font-inter">
-                                <span class="text-gold mr-3 mt-1">✦</span> Includes the complete Operational Diagnostic assessment.
-                            </li>
-                            <li class="flex items-start text-cream/90 font-inter">
-                                <span class="text-gold mr-3 mt-1">✦</span> Centralized, custom-written SOPs, training manuals, and interactive checklists.
-                            </li>
-                            <li class="flex items-start text-cream/90 font-inter">
-                                <span class="text-gold mr-3 mt-1">✦</span> Relational directories for staff, contacts, vendors, and tech stacks.
-                            </li>
-                            <li class="flex items-start text-cream/90 font-inter">
-                                <span class="text-gold mr-3 mt-1">✦</span> Role-Based Views ensuring appropriate access for employees, managers, and owners.
-                            </li>
-                            <li class="flex items-start text-cream/90 font-inter">
-                                <span class="text-gold mr-3 mt-1">✦</span> Two guided team implementations (Town Halls) and a 45-Day ROI check-in.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Expanded Support & Specialized Services -->
-                <div class="mt-16 border-t border-slate/20 pt-16">
-                    <h3 class="font-outfit font-black text-3xl tracking-tight text-indigo mb-10 text-center">Retainers & Additional Services</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <!-- Retainers -->
-                        <div class="bg-white border border-slate/20 p-8 rounded-sm shadow-sm">
-                            <h4 class="font-outfit font-black text-2xl tracking-tight text-indigo mb-2">Monthly Retainers</h4>
-                            <p class="font-inter text-sm text-slate mb-4">Exclusive to Living Operations HQ clients</p>
-                            <ul class="space-y-4">
-                                <li class="font-inter text-ink text-sm leading-relaxed">
-                                    <strong class="font-montserrat text-terracotta block">Tier 1 ($250/mo)</strong> Maintenance support for minor SOP adjustments and user permission management.
-                                </li>
-                                <li class="font-inter text-ink text-sm leading-relaxed">
-                                    <strong class="font-montserrat text-terracotta block">Tier 2 ($500/mo)</strong> Growth support including rewriting aging SOPs, new department onboarding, and deep operational support.
-                                </li>
-                            </ul>
+                    <!-- Transcription -->
+                    <div class="bg-white border border-slate/20 p-8 rounded-sm shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-gold"></div>
+                        <div>
+                            <h3 class="font-montserrat font-black text-2xl tracking-tight text-indigo mb-2">Secure Corporate Transcription</h3>
+                            <p class="font-inter text-sm text-slate mb-6">Pristine, actionable paper trails</p>
+                            
+                            <img src="chrysopoeia__image_newsletter-conceptart.jpg" alt="Corporate Transcription" class="w-full h-32 object-cover rounded-sm mb-6 border border-slate/10">
+                            
+                            <p class="font-inter text-ink text-sm leading-relaxed mb-8">Verbatim, formatted, and timestamped transcripts for sensitive events like private board meetings, HR investigations, and executive brain-dumps. Handled with 99% accuracy by an experienced legal transcriber.</p>
                         </div>
-
-                        <!-- Transcription -->
-                        <div class="bg-white border border-slate/20 p-8 rounded-sm shadow-sm">
-                            <h4 class="font-outfit font-black text-2xl tracking-tight text-indigo mb-2">Corporate Transcription</h4>
-                            <p class="font-inter text-sm text-slate mb-4">Pristine, actionable paper trails</p>
-                            <p class="font-inter text-ink text-sm leading-relaxed mb-4">Verbatim, formatted, and timestamped transcripts for sensitive events like private board meetings, HR investigations, and executive brain-dumps. Handled with 99% accuracy and quick turnarounds.</p>
-                            <p class="font-montserrat font-semibold text-indigo text-sm">Starting at $1.50/audio minute.</p>
-                        </div>
-
-                        <!-- OSINT -->
-                        <div class="bg-white border border-slate/20 p-8 rounded-sm shadow-sm">
-                            <h4 class="font-outfit font-black text-2xl tracking-tight text-indigo mb-2">Vendor Intelligence</h4>
-                            <p class="font-inter text-sm text-slate mb-4">Open-Source Intelligence (OSINT)</p>
-                            <p class="font-inter text-ink text-sm leading-relaxed mb-4">Enter your next lease or vendor negotiation with data-backed leverage. We deliver custom briefs to vet contracts, analyze competitors, and support risk-free expansion decisions.</p>
-                            <p class="font-montserrat font-semibold text-indigo text-sm">Flat-rate fee based on scope.</p>
-                        </div>
+                        <a href="mailto:hello@chrysopoeiaframeworks.com?subject=Transcription Inquiry" class="inline-flex font-montserrat font-semibold text-indigo hover:text-terracotta transition-colors text-sm items-center gap-2">
+                            Inquire about Transcription <span aria-hidden="true">&rarr;</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="py-20 bg-white border-y border-slate/20">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="font-outfit font-black text-4xl tracking-tight text-indigo mb-10 text-center">Frequently Asked Questions</h2>
-                
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <div class="border border-slate/30 rounded-sm overflow-hidden">
-                        <button class="faq-btn w-full text-left px-6 py-5 bg-cream hover:bg-slate/5 transition-colors flex justify-between items-center focus:outline-none" aria-expanded="false">
-                            <span class="font-montserrat font-semibold text-indigo">Who do you serve?</span>
-                            <span class="text-terracotta transform transition-transform duration-300" aria-hidden="true">▼</span>
-                        </button>
-                        <div class="faq-content hidden px-6 py-5 bg-white font-inter text-ink leading-relaxed">
-                            <p>We actively serve businesses in wellness and fitness, hospitality, food and beverage, and other high-touch service industries. We do not limit our work by a fixed employee count or number of locations—our solutions are tailored to your operational reality.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ 2 -->
-                    <div class="border border-slate/30 rounded-sm overflow-hidden">
-                        <button class="faq-btn w-full text-left px-6 py-5 bg-cream hover:bg-slate/5 transition-colors flex justify-between items-center focus:outline-none" aria-expanded="false">
-                            <span class="font-montserrat font-semibold text-indigo">Do you use generic templates?</span>
-                            <span class="text-terracotta transform transition-transform duration-300" aria-hidden="true">▼</span>
-                        </button>
-                        <div class="faq-content hidden px-6 py-5 bg-white font-inter text-ink leading-relaxed">
-                            <p>No. We build custom architecture (in Google Workspace or Airtable) that mirrors how your business actually operates. We collaborate with the people closest to the work to ensure the system fits the team, rather than forcing the team into a generic model.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ 3 -->
-                    <div class="border border-slate/30 rounded-sm overflow-hidden">
-                        <button class="faq-btn w-full text-left px-6 py-5 bg-cream hover:bg-slate/5 transition-colors flex justify-between items-center focus:outline-none" aria-expanded="false">
-                            <span class="font-montserrat font-semibold text-indigo">What is the COIF?</span>
-                            <span class="text-terracotta transform transition-transform duration-300" aria-hidden="true">▼</span>
-                        </button>
-                        <div class="faq-content hidden px-6 py-5 bg-white font-inter text-ink leading-relaxed">
-                            <p>COIF stands for the Chrysopoeia Operational Independence Framework. It is our proprietary psychometric assessment designed to pinpoint friction points before we step on-site. We re-administer it 45 days post-handoff to quantify your operational progress and reduced keyperson dependency.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ 4 -->
-                    <div class="border border-slate/30 rounded-sm overflow-hidden">
-                        <button class="faq-btn w-full text-left px-6 py-5 bg-cream hover:bg-slate/5 transition-colors flex justify-between items-center focus:outline-none" aria-expanded="false">
-                            <span class="font-montserrat font-semibold text-indigo">What are the KEI and DOMM frameworks?</span>
-                            <span class="text-terracotta transform transition-transform duration-300" aria-hidden="true">▼</span>
-                        </button>
-                        <div class="faq-content hidden px-6 py-5 bg-white font-inter text-ink leading-relaxed">
-                            <p>During diagnostics, we use the Keyperson Exposure Index (KEI) to measure how much daily operations rely on a single individual's memory. We use the Digital Operations Maturity Matrix (DOMM) to evaluate the state of your documented workflows, uncovering exactly what causes operational bottlenecks.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-cream">
+        
+        <!-- Free Consultation Section -->
+        <section id="contact" class="py-24 bg-white border-t border-slate/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <!-- Context -->
                     <div>
-                        <h2 class="font-outfit font-black text-4xl tracking-tight text-indigo mb-6">Ready to find clarity?</h2>
+                        <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-6">Ready to find clarity?</h2>
                         <p class="font-inter text-ink text-lg leading-relaxed mb-6">
                             Our client partnerships are driven by the belief that systems should support people, make daily work easier to understand, and eliminate single points of failure.
                         </p>
                         <p class="font-inter text-ink text-lg leading-relaxed mb-10">
-                            We prioritize honest communication and solutions designed for real life. Take our operational assessment to see where you stand, or schedule time to talk directly.
+                            We prioritize honest communication and solutions designed for real life. Reach out below to schedule a free 30-minute discovery call to map your operational bottlenecks.
                         </p>
-                        <div class="flex flex-col gap-4 items-start">
-                            <a href="#coif" class="bg-terracotta text-cream px-8 py-3 rounded-sm font-montserrat font-semibold hover:bg-terracotta/90 transition-colors shadow-sm">
-                                Take the COIF Assessment
-                            </a>
-                            <a href="https://calendar.app.google/Wf8MmWnER114sqae6" target="_blank" rel="noopener noreferrer" class="bg-indigo text-gold px-8 py-3 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors shadow-sm">
-                                Book a Free Consultation
-                            </a>
-                        </div>
                     </div>
 
-                    <!-- Web3Forms Form -->
-                    <div class="bg-white border-2 border-slate/10 p-8 rounded-sm shadow-md">
-                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6"> 
-                            <input type="hidden" name="access_key" value="3f5e94d0-7610-451f-93b5-1f12ecfb9766">
-                            <input type="hidden" name="subject" value="New Inquiry from Chrysopoeia Website">
+                    <!-- Web3Forms Consultation Form -->
+                    <div class="bg-cream border border-slate/20 p-8 rounded-sm shadow-md">
+                        <form id="consultationForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6"> 
+                            <!-- Live Access Key -->
+                            <input type="hidden" name="access_key" value="0d020344-9515-4949-9be2-81d6f096397c">
+                            <input type="hidden" name="subject" value="New Consultation Request - Chrysopoeia">
                         
                             <div>
-                                <label for="name" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Full Name</label>
-                                <input type="text" id="name" name="name" required class="w-full bg-cream border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="Jane Doe">
+                                <label for="consult-name" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Full Name</label>
+                                <input type="text" id="consult-name" name="name" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50">
                             </div>
                             
                             <div>
-                                <label for="email" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Email Address</label>
-                                <input type="email" id="email" name="email" required class="w-full bg-cream border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="jane@example.com">
+                                <label for="consult-email" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Email Address</label>
+                                <input type="email" id="consult-email" name="email" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50">
                             </div>
                             
                             <div>
-                                <label for="business" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Business Type / Industry</label>
-                                <input type="text" id="business" name="business" required class="w-full bg-cream border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="e.g., Boutique Hotel, Wellness Clinic">
+                                <label for="consult-business" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Business Type / Industry</label>
+                                <input type="text" id="consult-business" name="business" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50" placeholder="e.g., Boutique Hotel, Wellness Clinic">
                             </div>
                         
                             <div>
-                                <label for="painpoints" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Top Operational Pain Points</label>
-                                <textarea id="painpoints" name="painpoints" rows="4" required class="w-full bg-cream border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50 resize-none" placeholder="Where is the friction in your daily operations? What happens when you try to take a vacation?"></textarea>
+                                <label for="consult-painpoints" class="block font-montserrat text-sm font-semibold text-indigo mb-2">Top Operational Pain Points</label>
+                                <textarea id="consult-painpoints" name="painpoints" rows="4" required class="w-full bg-white border border-slate/30 text-ink px-4 py-3 rounded-sm focus:border-indigo focus:ring-1 focus:ring-indigo transition-colors placeholder-slate/50 resize-none" placeholder="Where is the friction in your daily operations? What happens when you try to take a vacation?"></textarea>
                             </div>
                         
                             <button type="submit" class="w-full bg-indigo text-gold py-4 px-6 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors shadow-md">
-                                Submit Inquiry
+                                Request Consultation
                             </button>
                         </form>
                     </div>
@@ -405,22 +347,35 @@
     <!-- Footer -->
     <footer class="bg-ink py-10 border-t border-slate/20">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <img src="LOGO-MAINversion-ChrysopoeiaFrameworks.svg" alt="Chrysopoeia Frameworks Logo" class="h-10 w-auto mx-auto mb-6 opacity-80 grayscale">
+            <h2 class="font-outfit font-black text-l text-cream/50 tracking-tight mb-4">CHRYSOPOEIA FRAMEWORKS</h2>
             <p class="font-inter text-slate text-sm">
-                &copy; 2026 Chrysopoeia Frameworks, LLC. All rights reserved. <br>
-                Empowering F&B, Wellness, and Hospitality Leaders with Practical Systems.
+                &copy; 2026-2027 Chrysopoeia Frameworks, LLC. All rights reserved.<br>
+                Tulsa, Oklahoma.
             </p>
         </div>
     </footer>
 
-    <!-- Success Popup Modal -->
-    <div id="successModal" class="hidden fixed inset-0 bg-ink/70 backdrop-blur-sm flex items-center justify-center z-50 px-4" aria-modal="true" role="dialog">
+    <!-- Waitlist Success Modal -->
+    <div id="waitlistSuccessModal" class="hidden fixed inset-0 bg-ink/70 backdrop-blur-sm flex items-center justify-center z-50 px-4" aria-modal="true" role="dialog">
         <div class="bg-cream p-8 rounded-sm shadow-xl max-w-md w-full border-2 border-indigo text-center relative">
-            <h3 class="font-outfit font-black text-2xl text-indigo mb-4">Message Received</h3>
+            <h3 class="font-montserrat font-black text-2xl text-indigo mb-4">You're on the list.</h3>
             <p class="font-inter text-ink mb-8 leading-relaxed">
-                Thank you for trusting us with your chaos. We will reach out shortly to begin turning it to gold.
+                Thank you for your interest. We will keep you updated as we finalize our AI-integrated operations systems for the 2027 launch.
             </p>
-            <button onclick="document.getElementById('successModal').classList.add('hidden')" class="bg-indigo text-gold py-3 px-8 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors">
+            <button onclick="document.getElementById('waitlistSuccessModal').classList.add('hidden')" class="bg-indigo text-gold py-3 px-8 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Consultation Success Modal -->
+    <div id="consultSuccessModal" class="hidden fixed inset-0 bg-ink/70 backdrop-blur-sm flex items-center justify-center z-50 px-4" aria-modal="true" role="dialog">
+        <div class="bg-cream p-8 rounded-sm shadow-xl max-w-md w-full border-2 border-indigo text-center relative">
+            <h3 class="font-montserrat font-black text-2xl text-indigo mb-4">Request Received.</h3>
+            <p class="font-inter text-ink mb-8 leading-relaxed">
+                Thank you for reaching out. We will review the operational friction you shared and contact you shortly to schedule your 30-minute discovery call.
+            </p>
+            <button onclick="document.getElementById('consultSuccessModal').classList.add('hidden')" class="bg-indigo text-gold py-3 px-8 rounded-sm font-montserrat font-semibold hover:bg-indigo/90 transition-colors">
                 Close
             </button>
         </div>
@@ -428,54 +383,52 @@
 
     <!-- Scripts -->
     <script>
-        // FAQ Accordion Logic
-        const faqButtons = document.querySelectorAll('.faq-btn');
-        faqButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const content = btn.nextElementSibling;
-                const arrow = btn.querySelector('span:last-child');
-                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        document.addEventListener("DOMContentLoaded", function() {
+            // Form Handling Function for Web3Forms
+            function handleFormSubmit(formId, modalId) {
+                const form = document.getElementById(formId);
                 
-                // Toggle attributes and classes
-                btn.setAttribute('aria-expanded', !isExpanded);
-                content.classList.toggle('hidden');
-                arrow.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
-            });
-        });
+                // Safety check: ensure the form actually exists on the page
+                if (!form) return; 
 
-        // Web3Forms AJAX Submission Logic
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault(); 
-            
-            const form = e.target;
-            const formData = new FormData(form);
-            const submitBtn = form.querySelector('button[type="submit"]');
-            
-            // Temporary loading state
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault(); 
+                    
+                    const formData = new FormData(form);
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    
+                    // Temporary loading state
+                    submitBtn.textContent = 'Sending...';
+                    submitBtn.disabled = true;
 
-            fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    document.getElementById('successModal').classList.remove('hidden');
-                    form.reset();
-                } else {
-                    alert('Something went wrong. Please try again.');
-                }
-            })
-            .catch(error => {
-                alert('Something went wrong. Please check your connection and try again.');
-            })
-            .finally(() => {
-                // Restore button state
-                submitBtn.textContent = 'Submit Inquiry';
-                submitBtn.disabled = false;
-            });
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.getElementById(modalId).classList.remove('hidden');
+                            form.reset();
+                        } else {
+                            alert('Error: ' + (data.message || 'Something went wrong. Please try again.'));
+                        }
+                    })
+                    .catch(error => {
+                        alert('Connection error. Please check your network and try again.');
+                    })
+                    .finally(() => {
+                        // Restore button state
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    });
+                });
+            }
+
+            // Initialize both forms with their specific success modals
+            handleFormSubmit('waitlistForm', 'waitlistSuccessModal');
+            handleFormSubmit('consultationForm', 'consultSuccessModal');
         });
     </script>
 </body>
