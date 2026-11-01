@@ -19,16 +19,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="chrysopoeiaframeworks-favicon_16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="chrysopoeiaframeworks-icon_appletouch.png">
 
-    <!--Google Analytics tag (gtag.js)-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0Z50WCQPE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-H0Z50WCQPE');
-    </script>
-
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -49,10 +39,6 @@
                         outfit: ['Outfit', 'sans-serif'],
                         montserrat: ['Montserrat', 'sans-serif'],
                         inter: ['Inter', 'sans-serif'],
-                    },
-                    backgroundImage: {
-                        /* Clean Architectural Drafting Grid */
-                        'geometric-grid': "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M40 0L0 0 0 40\" fill=\"none\" stroke=\"%23646974\" stroke-width=\"1\" stroke-opacity=\"0.15\"/%3E%3Ccircle cx=\"40\" cy=\"40\" r=\"1.5\" fill=\"%23646974\" fill-opacity=\"0.25\"/%3E%3C/svg%3E')",
                     }
                 }
             }
@@ -87,7 +73,7 @@
 
     <main class="flex-grow pt-20">
         <!-- Hero Section -->
-        <section class="relative pt-24 pb-20 lg:pt-32 lg:pb-28 px-4 sm:px-6 lg:px-8 border-b border-slate/20 bg-geometric-grid">
+        <section class="relative pt-24 pb-20 lg:pt-32 lg:pb-28 px-4 sm:px-6 lg:px-8 border-b border-slate/20 bg-cream">
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="max-w-2xl">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta/10 border border-terracotta/20 mb-6">
@@ -101,6 +87,9 @@
                     
                     <p class="font-inter font-normal text-ink text-lg leading-relaxed mb-6">
                         We are fundamentally re-architecting how F&B, wellness, and hospitality businesses operate. By integrating practical AI directly into your daily workflows, we are eliminating single points of failure faster than ever before.
+                    </p>
+                    <p class="font-inter font-normal text-ink text-lg leading-relaxed mb-6">
+                        Our mission is to transform operational complexity into practical systems that empower your team to take ownership. We build the infrastructure that gives you the freedom to step away from the floor, scale your business sustainably, and preserve your peace of mind.
                     </p>
                     <p class="font-inter font-normal text-ink text-lg leading-relaxed mb-10">
                         No more static binders or dusty PDFs. We are building self-sustaining, intelligent command centers that train your staff, answer operational questions in real-time, and preserve your legacy.
@@ -183,45 +172,33 @@
             </div>
         </section>
 
-        <!-- Meet the Owners Section -->
+        <!-- Our Approach Section -->
         <section id="about" class="py-24 bg-cream border-b border-slate/20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-6">Meet the Owners</h2>
-                        <p class="font-montserrat font-semibold text-terracotta mb-4">We know what it’s like to never be able to put your phone down.</p>
-                        
-                        <p class="font-inter text-ink leading-relaxed mb-4">Many service businesses grow through sheer determination, but that strength quickly becomes a liability as the operation scales. We know firsthand what happens when an owner cannot take a day off without the business grinding to a halt. Our Principal Consultant, Sirena, brings over 10 years of battle-tested operations management experience across the hospitality, food and beverage, and boutique wellness industries. She has stood exactly where you are—glued to a phone, answering the same questions from shift managers repeatedly because the answers either were not documented, or were documented in a bulky binder impossible to grab in the middle of a rush.</p>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-montserrat font-black text-4xl tracking-tight text-indigo mb-6">Our Approach</h2>
+                <p class="font-montserrat font-semibold text-terracotta mb-6">We know what it’s like to never be able to put your phone down.</p>
+                
+                <p class="font-inter text-ink leading-relaxed mb-6">Many service businesses grow through sheer determination, but that strength quickly becomes a liability as the operation scales. We know firsthand what happens when an owner cannot take a day off without the business grinding to a halt. Our Principal Consultant, Sirena, brings over 10 years of battle-tested operations management experience across the hospitality, food and beverage, and boutique wellness industries. She has stood exactly where you are—glued to a phone, answering the same questions from shift managers repeatedly because the answers either were not documented, or were documented in a bulky binder impossible to grab in the middle of a rush.</p>
 
-                        <p class="font-inter text-ink leading-relaxed mb-4">That firsthand understanding of operational burnout is why Chrysopoeia Frameworks was built. Equally owned by Sirena and Kai Marler, our partnership is rooted in the belief that durable growth requires honest evaluation. We believe trust is built by being direct, establishing clear expectations, and having the courage to acknowledge what actually needs to change on the floor.</p>
+                <p class="font-inter text-ink leading-relaxed mb-6">Co-Founder Elijah “Kai” Marler brings a crucial frontline perspective to our system design. Having spent years executing high-volume shift work, he understands exactly where top-down corporate processes fail in reality. Together, we know that if a system doesn't make the team's job easier on the floor, it will not be adopted.</p>
 
-                        <p class="font-inter text-ink leading-relaxed">We do not leave behind dusty PDF binders your team will abandon after the first week. By coupling familiar technology with our proprietary assessments, we build practical, actionable systems in the platforms you already use. We deliver a centralized, living operations HQ in a matter of weeks—without the months-long disruptions of traditional consulting. Our goal is to liberate you from daily bottlenecks, preserve your peace, and empower your team to take genuine pride in their work.</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="flex flex-col items-center">
-                            <img src="photo-owner_srm.jpg" alt="Sirena Marler" class="w-full aspect-square object-cover object-top rounded-sm mb-4 border border-slate/30 shadow-sm">
-                            <h4 class="font-montserrat font-semibold text-indigo text-center">Sirena Marler</h4>
-                            <p class="font-inter text-sm text-slate text-center">Co-Founder & Principal Consultant</p>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <img src="photo-owner_ekm.jpg" alt="Elijah 'Kai' Marler" class="w-full aspect-square object-cover object-top rounded-sm mb-4 border border-slate/30 shadow-sm">
-                            <h4 class="font-montserrat font-semibold text-indigo text-center">Elijah "Kai" Marler</h4>
-                            <p class="font-inter text-sm text-slate text-center">Co-Founder & Sirena's Cheerleader</p>
-                        </div>
-                    </div>
+                <p class="font-inter text-ink leading-relaxed mb-6">That combined understanding of operational burnout and frontline friction is why Chrysopoeia Frameworks was built. Rooted in the belief that durable growth requires honest evaluation, we build trust by being direct, establishing clear expectations, and having the courage to acknowledge what actually needs to change on the floor.</p>
+
+                <p class="font-inter text-ink leading-relaxed mb-6">We do not leave behind dusty PDF binders your team will abandon after the first week. By coupling familiar technology with our proprietary assessments, we build practical, actionable systems in platforms your staff can actually navigate during a busy shift. We deliver a centralized, living operations HQ in a matter of weeks—without the months-long disruptions of traditional consulting.</p>
+
+                <p class="font-inter text-ink leading-relaxed">However, a system is only as effective as the people using it. We don’t just hand over a dashboard and walk away. We actively guide your team through the onboarding process, building their confidence to ensure rapid adoption and minimal resistance. We also equip your managers to champion these new workflows, giving them the tools to independently run the floor so you can confidently step away. Our ultimate goal is to liberate you from daily bottlenecks, preserve your peace, and empower your team to take genuine pride in their work.</p>
+
                 </div>
-            </div>
         </section>
 
         <!-- Waitlist Capture Section -->
-        <section id="waitlist" class="py-24 bg-indigo bg-geometric-grid">
+        <section id="waitlist" class="py-24 bg-indigo">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     
                     <!-- Form Visual -->
                     <div class="hidden lg:block relative rounded-sm overflow-hidden shadow-2xl border border-gold/20">
-                        <img src="chrysopoeia_image_newsletter-transformativeOps.jpg" alt="Transmuting Chaos into Gold" class="w-full h-full object-cover">
+                        <img src="chrysopoeia_image_hourglass-light-bg.jpg" alt="Transmuting Chaos into Gold" class="w-full h-full object-cover">
                     </div>
 
                     <!-- Form -->
@@ -357,7 +334,7 @@
     <!-- Footer -->
     <footer class="bg-ink py-10 border-t border-slate/20">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="font-outfit font-black text-l text-cream/50 tracking-tight mb-4">CHRYSOPOEIA FRAMEWORKS</h2>
+            <h2 class="font-outfit font-black text-xl text-cream/50 tracking-tight mb-4">CHRYSOPOEIA FRAMEWORKS</h2>
             <p class="font-inter text-slate text-sm">
                 &copy; 2026-2027 Chrysopoeia Frameworks, LLC. All rights reserved.<br>
                 Tulsa, Oklahoma.
